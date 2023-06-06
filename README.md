@@ -13,5 +13,5 @@ https://medium.com/@gdmello.nunes/kedro-construindo-projetos-de-ci%C3%AAncia-de-
 As seções do notebook irão se dividir conforme os pipelines modulares implementados no projeto, de forma que observemos os processos realizados em cada etapa:
 * data_engineering
 * feature_engineering
-* machine_learning
-* deploy_model
+* model_training
+* prediction
