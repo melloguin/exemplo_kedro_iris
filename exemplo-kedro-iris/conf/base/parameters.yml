@@ -1,0 +1,4 @@
+### Parâmetros machine_learning pipeline
+feature_list: ['sepal_length','sepal_width','petal_length','petal_width','sepal_area','petal_area']
+target:        'species'
+k_neighbors:   5

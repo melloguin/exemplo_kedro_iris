@@ -1,0 +1,73 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+##################### Inputs
+sepal_data:
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ","
+  filepath: 'data/01_raw/sepal_iris_data.csv'
+  
+petal_data:
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ","
+  filepath: 'data/01_raw/petal_iris_data.csv'
+  
+species_data:
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ","
+  filepath: 'data/01_raw/species_iris_data.csv'
+  
+    
+##################### Iris Data
+iris_data_raw:
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ","
+  filepath: 'data/01_raw/iris_data_raw.csv'
+    
+iris_data:
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ","
+  filepath: 'data/02_intermediate/iris_data.csv'
+    
+iris_features:
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ","
+  filepath: 'data/04_feature/iris_features.csv'
+   
+df_train:
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ","
+  filepath: 'data/05_model_input/df_train.csv'
+
+df_test:
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ","
+  filepath: 'data/05_model_input/df_test.csv'
+
+
+##################### Classifiers
+knn_classifier:
+  type: pickle.PickleDataSet
+  filepath: 'data/06_models/knn_classifier.pkl'
+
+svm_classifier:
+  type: pickle.PickleDataSet
+  filepath: 'data/06_models/svm_classifier.pkl'
+  
+  
+##################### Prediction
+df_predicoes:
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ","
+  filepath: 'data/07_model_output/df_predicoes.csv'
