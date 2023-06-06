@@ -2,3 +2,4 @@
 feature_list: ['sepal_length','sepal_width','petal_length','petal_width','sepal_area','petal_area']
 target:        'species'
 k_neighbors:   5
+concatenacao:  'usado_apenas_para_ilustrar_o_exemplo'
