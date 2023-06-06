@@ -17,6 +17,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             inputs=['sepal_data',
                     'petal_data',
                     'species_data',
+                    'params:concatenacao'
                    ],
             outputs='iris_data_raw',
             name='Concatenacao_inputs'
