@@ -9,6 +9,7 @@ import pandas as pd
 def concatenacao_inputs(sepal_data:   pd.DataFrame,
                         petal_data:   pd.DataFrame,
                         species_data: pd.DataFrame,
+                        concatenacao: str,
                        ) -> pd.DataFrame:
     
     """
